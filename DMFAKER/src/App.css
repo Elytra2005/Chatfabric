@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* debug css */
+  /* border: 2px solid red; */
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-blue {
+  background-color: rgb(10, 117, 216) !important;
+  color: #fff !important;
+}

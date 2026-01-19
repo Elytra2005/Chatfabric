@@ -1,0 +1,282 @@
+
+.x-shell {
+  width: min(980px, calc(100% - 48px));
+  margin: 24px auto;
+  height: clamp(640px, 88vh, 900px);
+
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --line: rgba(255,255,255,0.08);
+  --muted: rgba(255,255,255,0.55);
+  --muted2: rgba(255,255,255,0.35);
+  --soft: rgba(255,255,255,0.07);
+  --blue: #1d9bf0;
+}
+
+.x-topbar {
+  height: 70px;
+  padding: 0 18px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+}
+
+.x-top-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.x-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #111;
+  flex-shrink: 0;
+}
+.x-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.x-avatar-ph {
+  width: 100%;
+  height: 100%;
+  background: #222;
+  border-radius: 999px;
+}
+
+.x-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.x-name {
+  color: #fff;
+  font-weight: 600;
+  /* font-weight: 800; */
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.x-verified {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.x-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.x-body {
+  flex: 1;
+  padding: 16px;
+  background: #000;
+}
+
+.x-canvas {
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+}
+
+.x-profile-card {
+  padding: 34px 18px 22px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.x-profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #111;
+}
+.x-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.x-profile-name-row {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.x-profile-name {
+  color: #fff;
+  /* font-weight: 900; */
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.x-profile-sub {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.x-view-profile {
+  margin-top: 16px;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.x-message-list {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.x-date-divider {
+  display: grid;
+  place-items: center;
+  margin: 10px 0 6px;
+  color: var(--muted2);
+  font-size: 13px;
+}
+
+.x-row {
+  width: 100%;
+  display: flex;
+}
+
+.x-friend-row {
+  justify-content: flex-start;
+}
+
+.x-user-row {
+  justify-content: flex-end;
+}
+
+.x-bubble {
+  max-width: min(560px, 78%);
+  padding: 12px 14px;
+  border-radius: 18px;
+  font-size: 15px;
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.x-friend-bubble {
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.x-user-bubble {
+  background: var(--blue);
+  color: #fff;
+}
+
+.x-meta {
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  opacity: 0.95;
+}
+
+.x-time {
+  color: rgba(255,255,255,0.92);
+}
+
+.x-check {
+  color: rgba(255,255,255,0.96);
+}
+
+.x-bottom-spacer {
+  height: 18px;
+}
+
+.x-footer {
+  height: 84px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+}
+
+.x-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.x-plus {
+  background: rgba(255,255,255,0.10);
+}
+
+.x-input-wrap {
+  flex: 1;
+  height: 52px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  min-width: 0;
+}
+
+.x-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+}
+
+.x-input::placeholder {
+  color: rgba(255,255,255,0.45);
+}
