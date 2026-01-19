@@ -6,6 +6,7 @@ const Footer = () => {
     return (<>
       <footer> 
          <p>This applicaton is still in beta. Expect better ui overhaul and new platforms.</p>
+         <p>We are not responsible with what ever you do with this app. </p>
          <p>© Copyright Chatfabric {date.getFullYear()} all rights reserved</p>
       </footer>
     </>)

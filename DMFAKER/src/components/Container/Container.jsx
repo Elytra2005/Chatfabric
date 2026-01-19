@@ -188,11 +188,11 @@ const Container = () => {
       </div>
 
       <div className='contain-social'>
-        {number === 1 ? (<Whatsapp contactname={friendname} message={message} chatfriend={chatfriend} />) : null}
-        {number === 2 ? (<Instagram contactname={friendname} message={message} image={image} chatfriend={chatfriend} />) : null}
-        {number === 3 ? (<Snapchat contactname={friendname} message={message} image={image} chatfriend={chatfriend} />) : null}
-        {number === 4 ? (<XChat contactname={friendname} handle={handle} message={message} image={image} chatfriend={chatfriend} />) : null}
-      </div>
+      {number === 1 ? (<Instagram contactname={friendname} message={message} image={image} chatfriend={chatfriend} />) : null}
+      {number === 2 ? (<Snapchat contactname={friendname} message={message} image={image} chatfriend={chatfriend} />) : null}
+      {number === 3 ? (<Whatsapp contactname={friendname} message={message} chatfriend={chatfriend} />) : null}
+      {number === 4 ? (<XChat contactname={friendname} handle={handle} message={message} image={image} chatfriend={chatfriend} />) : null}
+         </div>
     </div>
   );
 };
